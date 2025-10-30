@@ -86,6 +86,7 @@
             // 
             // DataMaintenance
             // 
+            this.DataMaintenance.BackgroundColor = System.Drawing.SystemColors.Info;
             this.DataMaintenance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataMaintenance.Location = new System.Drawing.Point(12, 181);
             this.DataMaintenance.Name = "DataMaintenance";

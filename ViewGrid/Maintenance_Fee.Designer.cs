@@ -150,6 +150,7 @@
             // 
             // DataMaintenanceFee
             // 
+            this.DataMaintenanceFee.BackgroundColor = System.Drawing.SystemColors.Info;
             this.DataMaintenanceFee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataMaintenanceFee.Location = new System.Drawing.Point(12, 191);
             this.DataMaintenanceFee.Name = "DataMaintenanceFee";
