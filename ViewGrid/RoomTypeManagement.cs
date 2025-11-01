@@ -53,5 +53,10 @@ namespace ViewGrid
             this.Hide();
             RoomManage2.Show();
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

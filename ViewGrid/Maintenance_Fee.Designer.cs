@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maintenance_Fee));
             this.DateMaintenanceFee = new System.Windows.Forms.DateTimePicker();
             this.txtStatusFee = new System.Windows.Forms.TextBox();
             this.txtRoomID = new System.Windows.Forms.TextBox();
@@ -42,6 +43,9 @@
             this.DataMaintenanceFee = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnDashBoard = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenanceFee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,9 +107,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.btnDashBoard);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1034, 60);
+            this.panel1.Size = new System.Drawing.Size(1034, 81);
             this.panel1.TabIndex = 27;
             // 
             // btnEditMainFee
@@ -162,7 +168,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Sienna;
-            this.label1.Location = new System.Drawing.Point(12, 85);
+            this.label1.Location = new System.Drawing.Point(12, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 25);
             this.label1.TabIndex = 21;
@@ -179,6 +185,28 @@
             this.btnSearch.TabIndex = 34;
             this.btnSearch.Text = "SEARCH";
             this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(-4, -12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 93);
+            this.label9.TabIndex = 39;
+            // 
+            // btnDashBoard
+            // 
+            this.btnDashBoard.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnDashBoard.FlatAppearance.BorderSize = 0;
+            this.btnDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashBoard.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDashBoard.Location = new System.Drawing.Point(876, 31);
+            this.btnDashBoard.Name = "btnDashBoard";
+            this.btnDashBoard.Size = new System.Drawing.Size(132, 23);
+            this.btnDashBoard.TabIndex = 43;
+            this.btnDashBoard.Text = "Return to Dashboard";
+            this.btnDashBoard.UseVisualStyleBackColor = false;
             // 
             // Maintenance_Fee
             // 
@@ -202,6 +230,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Maintenance_Fee";
             this.Text = "Maintenance_Fee";
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenanceFee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -224,5 +253,7 @@
         private System.Windows.Forms.DataGridView DataMaintenanceFee;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnDashBoard;
     }
 }

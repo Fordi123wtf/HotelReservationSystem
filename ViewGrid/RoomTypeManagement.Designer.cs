@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomTypeManagement));
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtOccupancy = new System.Windows.Forms.TextBox();
@@ -50,26 +50,37 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(930, 82);
+            this.btnLogout.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnLogout.Location = new System.Drawing.Point(929, 28);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
             this.btnLogout.TabIndex = 42;
             this.btnLogout.Text = "Log Out";
-            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Location = new System.Drawing.Point(792, 82);
+            this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDashboard.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.SeaShell;
+            this.btnDashboard.Location = new System.Drawing.Point(802, 28);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(121, 23);
             this.btnDashboard.TabIndex = 41;
             this.btnDashboard.Text = "Return to Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnView
             // 
@@ -95,16 +106,6 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 24);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "Hotel Name";
-            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(65, 403);
@@ -121,42 +122,42 @@
             // 
             // txtOccupancy
             // 
-            this.txtOccupancy.Location = new System.Drawing.Point(168, 336);
+            this.txtOccupancy.Location = new System.Drawing.Point(159, 320);
             this.txtOccupancy.Name = "txtOccupancy";
             this.txtOccupancy.Size = new System.Drawing.Size(156, 20);
             this.txtOccupancy.TabIndex = 35;
             // 
             // txtBedType
             // 
-            this.txtBedType.Location = new System.Drawing.Point(139, 308);
+            this.txtBedType.Location = new System.Drawing.Point(130, 292);
             this.txtBedType.Name = "txtBedType";
             this.txtBedType.Size = new System.Drawing.Size(183, 20);
             this.txtBedType.TabIndex = 34;
             // 
             // txtBeds
             // 
-            this.txtBeds.Location = new System.Drawing.Point(139, 271);
+            this.txtBeds.Location = new System.Drawing.Point(130, 255);
             this.txtBeds.Name = "txtBeds";
             this.txtBeds.Size = new System.Drawing.Size(183, 20);
             this.txtBeds.TabIndex = 33;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(139, 235);
+            this.txtPrice.Location = new System.Drawing.Point(130, 219);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(183, 20);
             this.txtPrice.TabIndex = 32;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(139, 201);
+            this.txtName.Location = new System.Drawing.Point(130, 185);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(183, 20);
             this.txtName.TabIndex = 31;
             // 
             // txtRoomType
             // 
-            this.txtRoomType.Location = new System.Drawing.Point(139, 170);
+            this.txtRoomType.Location = new System.Drawing.Point(130, 154);
             this.txtRoomType.Name = "txtRoomType";
             this.txtRoomType.Size = new System.Drawing.Size(183, 20);
             this.txtRoomType.TabIndex = 30;
@@ -175,7 +176,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(65, 344);
+            this.label7.Location = new System.Drawing.Point(56, 328);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 12);
             this.label7.TabIndex = 28;
@@ -185,7 +186,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(63, 316);
+            this.label6.Location = new System.Drawing.Point(54, 300);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 12);
             this.label6.TabIndex = 27;
@@ -195,7 +196,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(63, 279);
+            this.label5.Location = new System.Drawing.Point(54, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 12);
             this.label5.TabIndex = 26;
@@ -205,7 +206,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(63, 243);
+            this.label4.Location = new System.Drawing.Point(54, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 12);
             this.label4.TabIndex = 25;
@@ -215,7 +216,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 209);
+            this.label3.Location = new System.Drawing.Point(54, 193);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 12);
             this.label3.TabIndex = 24;
@@ -225,7 +226,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 178);
+            this.label2.Location = new System.Drawing.Point(52, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 12);
             this.label2.TabIndex = 23;
@@ -236,7 +237,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Sienna;
-            this.label1.Location = new System.Drawing.Point(71, 123);
+            this.label1.Location = new System.Drawing.Point(62, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(253, 25);
             this.label1.TabIndex = 22;
@@ -246,11 +247,22 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Controls.Add(this.btnLogout);
             this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.btnDashboard);
             this.panel3.Location = new System.Drawing.Point(1, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1034, 60);
+            this.panel3.Size = new System.Drawing.Size(1034, 78);
             this.panel3.TabIndex = 51;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(-6, -14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 93);
+            this.label9.TabIndex = 38;
             // 
             // RoomTypeManagement
             // 
@@ -258,8 +270,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1034, 661);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnDashboard);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel2);
@@ -282,7 +292,6 @@
             this.Name = "RoomTypeManagement";
             this.Text = "Room Type Management";
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,7 +303,6 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtOccupancy;
@@ -312,5 +320,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label9;
     }
 }
