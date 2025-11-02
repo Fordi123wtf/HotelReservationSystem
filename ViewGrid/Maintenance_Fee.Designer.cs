@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnEditMainFee = new System.Windows.Forms.Button();
             this.btnAddMainFee = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,8 +44,7 @@
             this.DataMaintenanceFee = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnDashBoard = new System.Windows.Forms.Button();
+            this.btn_return = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenanceFee)).BeginInit();
             this.SuspendLayout();
@@ -107,12 +107,21 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Controls.Add(this.btnDashBoard);
+            this.panel1.Controls.Add(this.btn_return);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 81);
             this.panel1.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(-4, -12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 93);
+            this.label9.TabIndex = 39;
             // 
             // btnEditMainFee
             // 
@@ -185,28 +194,20 @@
             this.btnSearch.TabIndex = 34;
             this.btnSearch.Text = "SEARCH";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // label9
+            // btn_return
             // 
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
-            this.label9.Location = new System.Drawing.Point(-4, -12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 93);
-            this.label9.TabIndex = 39;
-            // 
-            // btnDashBoard
-            // 
-            this.btnDashBoard.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnDashBoard.FlatAppearance.BorderSize = 0;
-            this.btnDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashBoard.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDashBoard.Location = new System.Drawing.Point(876, 31);
-            this.btnDashBoard.Name = "btnDashBoard";
-            this.btnDashBoard.Size = new System.Drawing.Size(132, 23);
-            this.btnDashBoard.TabIndex = 43;
-            this.btnDashBoard.Text = "Return to Dashboard";
-            this.btnDashBoard.UseVisualStyleBackColor = false;
+            this.btn_return.BackColor = System.Drawing.Color.Brown;
+            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Snow;
+            this.btn_return.Location = new System.Drawing.Point(871, 23);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(130, 35);
+            this.btn_return.TabIndex = 56;
+            this.btn_return.Text = "Return to DashBoard";
+            this.btn_return.UseVisualStyleBackColor = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // Maintenance_Fee
             // 
@@ -254,6 +255,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnDashBoard;
+        private System.Windows.Forms.Button btn_return;
     }
 }

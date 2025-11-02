@@ -16,7 +16,7 @@ namespace ViewGrid
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmployeeManagement());
+            Application.Run(new User_Interface1());
         }
     }
 }

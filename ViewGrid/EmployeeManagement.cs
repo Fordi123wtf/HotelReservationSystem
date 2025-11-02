@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ViewGrid
 {
-    public partial class Maintenance_Sched : Form
+    public partial class EmployeeManagement : Form
     {
-        public Maintenance_Sched()
+        public EmployeeManagement()
         {
             InitializeComponent();
         }
 
-        private void DataMaintenance_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnAddEmployee_Click(object sender, EventArgs e)
         {
 
         }

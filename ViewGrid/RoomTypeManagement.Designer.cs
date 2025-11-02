@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomTypeManagement));
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_return = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -66,21 +66,7 @@
             this.btnLogout.TabIndex = 42;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.UseVisualStyleBackColor = false;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDashboard.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.ForeColor = System.Drawing.Color.SeaShell;
-            this.btnDashboard.Location = new System.Drawing.Point(802, 28);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(121, 23);
-            this.btnDashboard.TabIndex = 41;
-            this.btnDashboard.Text = "Return to Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnView
             // 
@@ -247,13 +233,26 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Controls.Add(this.btn_return);
             this.panel3.Controls.Add(this.btnLogout);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.btnDashboard);
             this.panel3.Location = new System.Drawing.Point(1, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1034, 78);
             this.panel3.TabIndex = 51;
+            // 
+            // btn_return
+            // 
+            this.btn_return.BackColor = System.Drawing.Color.Brown;
+            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Snow;
+            this.btn_return.Location = new System.Drawing.Point(730, 23);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(154, 35);
+            this.btn_return.TabIndex = 54;
+            this.btn_return.Text = "Return to DashBoard";
+            this.btn_return.UseVisualStyleBackColor = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // label9
             // 
@@ -291,6 +290,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "RoomTypeManagement";
             this.Text = "Room Type Management";
+            this.Load += new System.EventHandler(this.RoomTypeManagement_Load);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -300,7 +300,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel2;
@@ -321,5 +320,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btn_return;
     }
 }

@@ -35,6 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnEditEmployee = new System.Windows.Forms.Button();
+            this.btn_return = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,6 +44,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.btn_return);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1035, 58);
@@ -94,6 +97,7 @@
             this.btnAddEmployee.TabIndex = 5;
             this.btnAddEmployee.Text = "ADD";
             this.btnAddEmployee.UseVisualStyleBackColor = false;
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // btnEditEmployee
             // 
@@ -105,6 +109,19 @@
             this.btnEditEmployee.TabIndex = 6;
             this.btnEditEmployee.Text = "EDIT";
             this.btnEditEmployee.UseVisualStyleBackColor = false;
+            // 
+            // btn_return
+            // 
+            this.btn_return.BackColor = System.Drawing.Color.Brown;
+            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Snow;
+            this.btn_return.Location = new System.Drawing.Point(878, 11);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(130, 35);
+            this.btn_return.TabIndex = 56;
+            this.btn_return.Text = "Return to DashBoard";
+            this.btn_return.UseVisualStyleBackColor = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // EmployeeManagement
             // 
@@ -120,7 +137,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "EmployeeManagement";
-            this.Text = "Form1";
+            this.Text = "EmployeeManagement";
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -136,6 +154,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Button btnEditEmployee;
+        private System.Windows.Forms.Button btn_return;
     }
 }
 

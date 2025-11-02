@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ViewGrid
 {
-    public partial class EmployeeManagement : Form
+    public partial class ReservationDetails : Form
     {
-        public EmployeeManagement()
+        public ReservationDetails()
         {
             InitializeComponent();
+        }
+
+        private void ReservationDetails_Load(object sender, EventArgs e)
+        {
+           
+
+
         }
     }
 }

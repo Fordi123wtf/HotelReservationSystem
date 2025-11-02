@@ -41,7 +41,9 @@
             this.txtRoomNumber = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.DateMaintenance = new System.Windows.Forms.DateTimePicker();
+            this.btn_return = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenance)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEditMain
@@ -92,6 +94,7 @@
             this.DataMaintenance.Name = "DataMaintenance";
             this.DataMaintenance.Size = new System.Drawing.Size(1005, 459);
             this.DataMaintenance.TabIndex = 9;
+            this.DataMaintenance.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataMaintenance_CellContentClick);
             // 
             // label1
             // 
@@ -108,6 +111,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.SaddleBrown;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Controls.Add(this.btn_return);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 60);
@@ -167,6 +171,19 @@
             this.DateMaintenance.Size = new System.Drawing.Size(174, 20);
             this.DateMaintenance.TabIndex = 20;
             // 
+            // btn_return
+            // 
+            this.btn_return.BackColor = System.Drawing.Color.Brown;
+            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Snow;
+            this.btn_return.Location = new System.Drawing.Point(873, 11);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(130, 35);
+            this.btn_return.TabIndex = 55;
+            this.btn_return.Text = "Return to DashBoard";
+            this.btn_return.UseVisualStyleBackColor = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
+            // 
             // Maintenance_Sched
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,6 +206,7 @@
             this.Name = "Maintenance_Sched";
             this.Text = "Maintenance_Sched";
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenance)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +227,6 @@
         private System.Windows.Forms.TextBox txtRoomNumber;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.DateTimePicker DateMaintenance;
+        private System.Windows.Forms.Button btn_return;
     }
 }
