@@ -36,6 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDashBoard = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnEditMainFee = new System.Windows.Forms.Button();
             this.btnAddMainFee = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,8 +45,6 @@
             this.DataMaintenanceFee = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnDashBoard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenanceFee)).BeginInit();
             this.SuspendLayout();
@@ -113,6 +113,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 81);
             this.panel1.TabIndex = 27;
+            // 
+            // btnDashBoard
+            // 
+            this.btnDashBoard.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnDashBoard.FlatAppearance.BorderSize = 0;
+            this.btnDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashBoard.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDashBoard.Location = new System.Drawing.Point(876, 31);
+            this.btnDashBoard.Name = "btnDashBoard";
+            this.btnDashBoard.Size = new System.Drawing.Size(132, 23);
+            this.btnDashBoard.TabIndex = 43;
+            this.btnDashBoard.Text = "Return to Dashboard";
+            this.btnDashBoard.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(-4, -12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 93);
+            this.label9.TabIndex = 39;
             // 
             // btnEditMainFee
             // 
@@ -186,28 +208,6 @@
             this.btnSearch.Text = "SEARCH";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
-            this.label9.Location = new System.Drawing.Point(-4, -12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 93);
-            this.label9.TabIndex = 39;
-            // 
-            // btnDashBoard
-            // 
-            this.btnDashBoard.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnDashBoard.FlatAppearance.BorderSize = 0;
-            this.btnDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashBoard.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDashBoard.Location = new System.Drawing.Point(876, 31);
-            this.btnDashBoard.Name = "btnDashBoard";
-            this.btnDashBoard.Size = new System.Drawing.Size(132, 23);
-            this.btnDashBoard.TabIndex = 43;
-            this.btnDashBoard.Text = "Return to Dashboard";
-            this.btnDashBoard.UseVisualStyleBackColor = false;
-            // 
             // Maintenance_Fee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +228,7 @@
             this.Controls.Add(this.txtMainFee);
             this.Controls.Add(this.DataMaintenanceFee);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Maintenance_Fee";
             this.Text = "Maintenance_Fee";
             this.panel1.ResumeLayout(false);

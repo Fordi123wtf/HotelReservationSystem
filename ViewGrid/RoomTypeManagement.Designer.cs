@@ -289,6 +289,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RoomTypeManagement";
             this.Text = "Room Type Management";
             this.panel3.ResumeLayout(false);

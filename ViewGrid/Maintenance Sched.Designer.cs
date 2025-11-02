@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Maintenance_Sched));
             this.btnEditMain = new System.Windows.Forms.Button();
             this.btnAddMain = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -186,6 +187,7 @@
             this.Controls.Add(this.txtMain);
             this.Controls.Add(this.DataMaintenance);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Maintenance_Sched";
             this.Text = "Maintenance_Sched";
             ((System.ComponentModel.ISupportInitialize)(this.DataMaintenance)).EndInit();
