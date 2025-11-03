@@ -102,7 +102,7 @@
             this.btn_Room_Management.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_Room_Management.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Room_Management.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Room_Management.Location = new System.Drawing.Point(94, 212);
+            this.btn_Room_Management.Location = new System.Drawing.Point(94, 242);
             this.btn_Room_Management.Name = "btn_Room_Management";
             this.btn_Room_Management.Size = new System.Drawing.Size(267, 45);
             this.btn_Room_Management.TabIndex = 13;
@@ -115,7 +115,7 @@
             this.btn_Room_Type_Management.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_Room_Type_Management.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Room_Type_Management.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Room_Type_Management.Location = new System.Drawing.Point(94, 140);
+            this.btn_Room_Type_Management.Location = new System.Drawing.Point(94, 191);
             this.btn_Room_Type_Management.Name = "btn_Room_Type_Management";
             this.btn_Room_Type_Management.Size = new System.Drawing.Size(267, 45);
             this.btn_Room_Type_Management.TabIndex = 12;
@@ -128,7 +128,7 @@
             this.btn_User_Records.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_User_Records.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_User_Records.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_User_Records.Location = new System.Drawing.Point(94, 281);
+            this.btn_User_Records.Location = new System.Drawing.Point(94, 293);
             this.btn_User_Records.Name = "btn_User_Records";
             this.btn_User_Records.Size = new System.Drawing.Size(267, 45);
             this.btn_User_Records.TabIndex = 11;
