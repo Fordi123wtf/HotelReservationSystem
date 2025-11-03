@@ -23,5 +23,25 @@ namespace ViewGrid
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

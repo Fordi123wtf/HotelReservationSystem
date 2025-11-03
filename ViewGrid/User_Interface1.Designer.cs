@@ -67,9 +67,9 @@
             // label2
             // 
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(-21, 205);
+            this.label2.Location = new System.Drawing.Point(-27, 207);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(698, 273);
+            this.label2.Size = new System.Drawing.Size(676, 273);
             this.label2.TabIndex = 6;
             this.label2.Text = "label2";
             // 
