@@ -70,9 +70,9 @@
             this.label1.ForeColor = System.Drawing.Color.Sienna;
             this.label1.Location = new System.Drawing.Point(12, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 25);
+            this.label1.Size = new System.Drawing.Size(305, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "EMPLOOYEE MANAGEMENT";
+            this.label1.Text = "EMPLOYEE MANAGEMENT";
             // 
             // dataGridView1
             // 
