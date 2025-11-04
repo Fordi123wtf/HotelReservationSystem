@@ -169,6 +169,12 @@
     <Compile Include="User_Interface1.Designer.cs">
       <DependentUpon>User_Interface1.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_SignUp.Designer.cs">
+      <DependentUpon>User_SignUp.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminLogIn.resx">
       <DependentUpon>AdminLogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User_Interface1.resx">
       <DependentUpon>User_Interface1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_SignUp.resx">
+      <DependentUpon>User_SignUp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
