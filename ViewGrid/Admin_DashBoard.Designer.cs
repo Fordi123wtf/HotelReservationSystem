@@ -104,7 +104,7 @@
             this.btn_User_Records.Name = "btn_User_Records";
             this.btn_User_Records.Size = new System.Drawing.Size(267, 45);
             this.btn_User_Records.TabIndex = 11;
-            this.btn_User_Records.Text = "User Records";
+            this.btn_User_Records.Text = "Client Records";
             this.btn_User_Records.UseVisualStyleBackColor = false;
             this.btn_User_Records.Click += new System.EventHandler(this.btn_User_Records_Click);
             // 
