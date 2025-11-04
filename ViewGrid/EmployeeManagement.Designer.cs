@@ -33,9 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtEmployee = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAddEmployee = new System.Windows.Forms.Button();
-            this.btnEditEmployee = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -87,42 +87,43 @@
             // 
             this.txtEmployee.Location = new System.Drawing.Point(17, 151);
             this.txtEmployee.Name = "txtEmployee";
-            this.txtEmployee.Size = new System.Drawing.Size(347, 20);
+            this.txtEmployee.Size = new System.Drawing.Size(215, 20);
             this.txtEmployee.TabIndex = 3;
             // 
-            // label2
+            // btnEdit
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Sienna;
-            this.label2.Location = new System.Drawing.Point(17, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Search:";
+            this.btnEdit.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnEdit.ForeColor = System.Drawing.Color.DarkSalmon;
+            this.btnEdit.Location = new System.Drawing.Point(787, 141);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(103, 30);
+            this.btnEdit.TabIndex = 5;
+            this.btnEdit.Text = "EDIT";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
-            // btnAddEmployee
+            // btnDelete
             // 
-            this.btnAddEmployee.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnAddEmployee.ForeColor = System.Drawing.Color.DarkSalmon;
-            this.btnAddEmployee.Location = new System.Drawing.Point(787, 141);
-            this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(103, 30);
-            this.btnAddEmployee.TabIndex = 5;
-            this.btnAddEmployee.Text = "ADD";
-            this.btnAddEmployee.UseVisualStyleBackColor = false;
-            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
+            this.btnDelete.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnDelete.ForeColor = System.Drawing.Color.DarkSalmon;
+            this.btnDelete.Location = new System.Drawing.Point(905, 141);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(103, 30);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // btnEditEmployee
+            // btnSearch
             // 
-            this.btnEditEmployee.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btnEditEmployee.ForeColor = System.Drawing.Color.DarkSalmon;
-            this.btnEditEmployee.Location = new System.Drawing.Point(905, 141);
-            this.btnEditEmployee.Name = "btnEditEmployee";
-            this.btnEditEmployee.Size = new System.Drawing.Size(103, 30);
-            this.btnEditEmployee.TabIndex = 6;
-            this.btnEditEmployee.Text = "EDIT";
-            this.btnEditEmployee.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnSearch.ForeColor = System.Drawing.Color.DarkSalmon;
+            this.btnSearch.Location = new System.Drawing.Point(266, 141);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(103, 30);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // EmployeeManagement
             // 
@@ -130,9 +131,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1034, 661);
-            this.Controls.Add(this.btnEditEmployee);
-            this.Controls.Add(this.btnAddEmployee);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtEmployee);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -152,10 +153,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtEmployee;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnAddEmployee;
-        private System.Windows.Forms.Button btnEditEmployee;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btn_return;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 

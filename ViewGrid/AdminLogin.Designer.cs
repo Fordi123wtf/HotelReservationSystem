@@ -43,7 +43,7 @@
             this.btn_finish.Name = "btn_finish";
             this.btn_finish.Size = new System.Drawing.Size(75, 41);
             this.btn_finish.TabIndex = 0;
-            this.btn_finish.Text = "Finish:";
+            this.btn_finish.Text = "Finish";
             this.btn_finish.UseVisualStyleBackColor = true;
             this.btn_finish.Click += new System.EventHandler(this.btn_finish_Click);
             // 
@@ -74,10 +74,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(346, 112);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(331, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 20);
+            this.label1.Size = new System.Drawing.Size(72, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Log In";
             // 
