@@ -12,9 +12,9 @@ using MySql.Data.MySqlClient;
 
 namespace ViewGrid
 {
-    public partial class AdminLogin : Form
+    public partial class AdminSignup : Form
     {
-        public AdminLogin()
+        public AdminSignup()
         {
             InitializeComponent();
         }
