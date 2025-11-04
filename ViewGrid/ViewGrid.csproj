@@ -119,6 +119,12 @@
     <Compile Include="AdminSignUp.Designer.cs">
       <DependentUpon>AdminSignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRecords.Designer.cs">
+      <DependentUpon>ClientRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReservationDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_DashBoard.resx">
       <DependentUpon>Admin_DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientRecords.resx">
+      <DependentUpon>ClientRecords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>

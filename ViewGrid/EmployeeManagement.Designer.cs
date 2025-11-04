@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_return = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtEmployee = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnEditEmployee = new System.Windows.Forms.Button();
-            this.btn_return = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,19 @@
             this.panel1.Size = new System.Drawing.Size(1035, 58);
             this.panel1.TabIndex = 0;
             // 
+            // btn_return
+            // 
+            this.btn_return.BackColor = System.Drawing.Color.Brown;
+            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Snow;
+            this.btn_return.Location = new System.Drawing.Point(878, 11);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(130, 35);
+            this.btn_return.TabIndex = 56;
+            this.btn_return.Text = "Return to DashBoard";
+            this.btn_return.UseVisualStyleBackColor = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -63,6 +76,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(17, 177);
             this.dataGridView1.Name = "dataGridView1";
@@ -109,19 +123,6 @@
             this.btnEditEmployee.TabIndex = 6;
             this.btnEditEmployee.Text = "EDIT";
             this.btnEditEmployee.UseVisualStyleBackColor = false;
-            // 
-            // btn_return
-            // 
-            this.btn_return.BackColor = System.Drawing.Color.Brown;
-            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_return.ForeColor = System.Drawing.Color.Snow;
-            this.btn_return.Location = new System.Drawing.Point(878, 11);
-            this.btn_return.Name = "btn_return";
-            this.btn_return.Size = new System.Drawing.Size(130, 35);
-            this.btn_return.TabIndex = 56;
-            this.btn_return.Text = "Return to DashBoard";
-            this.btn_return.UseVisualStyleBackColor = false;
-            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // EmployeeManagement
             // 
