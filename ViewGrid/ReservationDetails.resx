@@ -117,4 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Pure luxury comes with the premium room. 
+The amenities inside the premium package are comparable
+to a modest luxury house, all yours for however long you wish to stay!
+
+4 bedrooms with a King or 2 Double beds each
+4 bathrooms, and a lounge room with a dining space.
+
+Aside from the perks of standard and double, 
+the premium package gets access to a team of chefs of which you can
+ request meals from anytime!
+</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>The double package features a room with two rooms, 
+each with their own amenities!
+Seeking a luxury getaway for a few days!
+
+2 bedrooms with a King or 3 Double beds
+2 bathrooms, and a kitchenette per room.
+
+Aside from having what the standard room already has, 
+the double package is privy to free caviar per night!
+</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Get a taste of luxury with the standard room! 
+
+This room is perfect for a couple that's seeking
+a luxury gateway for a few days!
+
+1 bedroom with a King or 2 Double beds
+1 bathroom. and a dining space.
+
+Comes with the standard free wifi, TV, free room service, 
+and access to everything the hotel offers!
+
+</value>
+  </data>
 </root>

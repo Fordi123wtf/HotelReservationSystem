@@ -32,5 +32,10 @@ namespace ViewGrid
             this.Hide();
 
         }
+
+        private void User_Interface1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

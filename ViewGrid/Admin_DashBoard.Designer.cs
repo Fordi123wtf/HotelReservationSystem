@@ -179,6 +179,7 @@
             this.Name = "Admin_DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_DashBoard";
+            this.Load += new System.EventHandler(this.Admin_DashBoard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

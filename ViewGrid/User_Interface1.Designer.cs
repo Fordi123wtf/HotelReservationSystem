@@ -106,6 +106,7 @@
             this.Name = "User_Interface1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ccccccdvx5";
+            this.Load += new System.EventHandler(this.User_Interface1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

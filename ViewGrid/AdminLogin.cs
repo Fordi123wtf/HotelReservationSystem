@@ -22,8 +22,11 @@ namespace ViewGrid
         {
             string email = txt_email.Text;
             string password = txt_password.Text;
+
             // ADDED IN THIS sqlcon: PORT = 3307 AND pwd='' <-- only works for me btw, Lamando
-            MySqlConnection sqlcon = new MySqlConnection("server=localhost; port=3307;database=admin_info; uid=root;pwd=''");
+            // changed the database name from admin_info to hotel_reservation.
+
+            MySqlConnection sqlcon = new MySqlConnection("server=localhost; port=3307;database=hotel_reservation; uid=root;pwd=''");
             MySqlCommand sqlcmd = new MySqlCommand();   
 
             sqlcon.Open();
