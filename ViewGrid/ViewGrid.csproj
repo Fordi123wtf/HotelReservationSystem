@@ -107,6 +107,18 @@
     <Compile Include="AdminSignup.Designer.cs">
       <DependentUpon>AdminSignup.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRecords.Designer.cs">
+      <DependentUpon>ClientRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRecords.Designer.cs">
+      <DependentUpon>AdminRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoomManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminSignup.resx">
       <DependentUpon>AdminSignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientRecords.resx">
+      <DependentUpon>ClientRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRecords.resx">
+      <DependentUpon>AdminRecords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance Sched.resx">
       <DependentUpon>Maintenance Sched.cs</DependentUpon>
