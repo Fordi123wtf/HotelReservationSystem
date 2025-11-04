@@ -21,5 +21,12 @@ namespace ViewGrid
         {
 
         }
+
+        private void btnRdashboard_Click(object sender, EventArgs e)
+        {
+            Admin_DashBoard admin_DashBoard = new Admin_DashBoard();
+            admin_DashBoard.Show();
+            this.Hide();
+        }
     }
 }

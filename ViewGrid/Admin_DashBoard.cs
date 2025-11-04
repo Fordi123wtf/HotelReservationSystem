@@ -68,7 +68,9 @@ namespace ViewGrid
 
         private void btn_User_Records_Click(object sender, EventArgs e)
         {
-            
+            ClientRecords clientrecord = new ClientRecords();
+            clientrecord.Show();
+            this.Hide();
         }
 
         private void btn_Employee_Management_Click(object sender, EventArgs e)

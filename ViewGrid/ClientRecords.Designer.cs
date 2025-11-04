@@ -126,6 +126,7 @@
             this.btnRdashboard.TabIndex = 41;
             this.btnRdashboard.Text = "Return to Dashboard";
             this.btnRdashboard.UseVisualStyleBackColor = false;
+            this.btnRdashboard.Click += new System.EventHandler(this.btnRdashboard_Click);
             // 
             // ClientRecords
             // 
