@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_return = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtEmployee = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnEditEmployee = new System.Windows.Forms.Button();
-            this.btn_return = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +50,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1035, 58);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_return
+            // 
+            this.btn_return.BackColor = System.Drawing.Color.Brown;
+            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_return.ForeColor = System.Drawing.Color.Snow;
+            this.btn_return.Location = new System.Drawing.Point(878, 11);
+            this.btn_return.Name = "btn_return";
+            this.btn_return.Size = new System.Drawing.Size(130, 35);
+            this.btn_return.TabIndex = 56;
+            this.btn_return.Text = "Return to DashBoard";
+            this.btn_return.UseVisualStyleBackColor = false;
+            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
             // 
             // label1
             // 
@@ -110,18 +124,17 @@
             this.btnEditEmployee.Text = "EDIT";
             this.btnEditEmployee.UseVisualStyleBackColor = false;
             // 
-            // btn_return
+            // btnSearch
             // 
-            this.btn_return.BackColor = System.Drawing.Color.Brown;
-            this.btn_return.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_return.ForeColor = System.Drawing.Color.Snow;
-            this.btn_return.Location = new System.Drawing.Point(878, 11);
-            this.btn_return.Name = "btn_return";
-            this.btn_return.Size = new System.Drawing.Size(130, 35);
-            this.btn_return.TabIndex = 56;
-            this.btn_return.Text = "Return to DashBoard";
-            this.btn_return.UseVisualStyleBackColor = false;
-            this.btn_return.Click += new System.EventHandler(this.btn_return_Click);
+            this.btnSearch.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnSearch.ForeColor = System.Drawing.Color.DarkSalmon;
+            this.btnSearch.Location = new System.Drawing.Point(387, 141);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(103, 30);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // EmployeeManagement
             // 
@@ -129,6 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1034, 661);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnEditEmployee);
             this.Controls.Add(this.btnAddEmployee);
             this.Controls.Add(this.label2);
@@ -155,6 +169,7 @@
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Button btnEditEmployee;
         private System.Windows.Forms.Button btn_return;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
