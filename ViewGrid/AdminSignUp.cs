@@ -35,7 +35,7 @@ namespace ViewGrid
             //Pinalitan ko yung pangalan ng form mula AdminLogin to AdminSignUp sa ibaba
             // Baka mag loko yung Database mo
             // ADDED IN THIS sqlcon: PORT = 3307 AND pwd='' <-- only works for me btw, Lamando
-            MySqlConnection sqlcon = new MySqlConnection("server=localhost; database=admin_signup; uid=root;");
+            MySqlConnection sqlcon = new MySqlConnection("server=localhost; database=hotel_reservation; uid=root;");
             MySqlCommand sqlcmd = new MySqlCommand();
 
             sqlcon.Open();
