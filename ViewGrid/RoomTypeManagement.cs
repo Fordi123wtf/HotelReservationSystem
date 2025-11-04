@@ -58,5 +58,10 @@ namespace ViewGrid
         {
 
         }
+
+        private void RoomTypeManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

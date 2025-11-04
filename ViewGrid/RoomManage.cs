@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace ViewGrid
 {
@@ -47,6 +48,44 @@ namespace ViewGrid
             sqlcon.Close();
         }
 
+        public void updaterecord (string roomtype,string name,string price,string beds,string bedtype,string occupancy)
+        {
+            MySqlConnection sqlcon = new MySqlConnection("server=localhost; database=admin_roomtypemanagement; uid=root;");
+            MySqlCommand sqlcmd = new MySqlCommand();
+
+            sqlcon.Open();
+
+            sqlcmd.CommandText = $"UPDATE roomtypemanagement" +
+                $"SET Room_Type = '{roomtype}' , Name = '{name}', Price = '{price}', Beds = '{beds}', Bed_Types = '{bedtype}',  Max_Occupancy = '{occupancy}'" +
+                $"WHERE Room_Type = '{roomtype}'";
+
+            sqlcmd.CommandType = CommandType.Text ; 
+            sqlcmd.Connection = sqlcon;
+
+            sqlcmd.ExecuteNonQuery();
+
+            sqlcon.Close() ;
+        }
+
+        public void deleterecord(string roomtype)
+        {
+            MySqlConnection sqlcon = new MySqlConnection("server=localhost; database=admin_roomtypemanagement; uid=root;");
+            MySqlCommand sqlcmd = new MySqlCommand();
+
+            sqlcon.Open();
+
+            sqlcmd.CommandText = $"DELETE roomtypemanagement WHERE roomtypemanagement " +
+                $"SET Room_Type = '{roomtype}' , Name = '{name}', Price = '{price}', Beds = '{beds}', Bed_Types = '{bedtype}',  Max_Occupancy = '{occupancy}'" +
+                $"WHERE Room_Type = '{roomtype}'";
+
+            sqlcmd.CommandType = CommandType.Text;
+            sqlcmd.Connection = sqlcon;
+
+            sqlcmd.ExecuteNonQuery();
+
+            sqlcon.Close();
+        }
+
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
             RoomTypeManagement RoomTypeManagement2 = new RoomTypeManagement();
@@ -57,6 +96,11 @@ namespace ViewGrid
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomManage_Load(object sender, EventArgs e)
         {
 
         }

@@ -292,6 +292,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RoomTypeManagement";
             this.Text = "Room Type Management";
+            this.Load += new System.EventHandler(this.RoomTypeManagement_Load);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
