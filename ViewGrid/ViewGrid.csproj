@@ -143,12 +143,6 @@
     <Compile Include="RoomTypeManagement.Designer.cs">
       <DependentUpon>RoomTypeManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Maintenance Sched.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Maintenance Sched.Designer.cs">
-      <DependentUpon>Maintenance Sched.cs</DependentUpon>
-    </Compile>
     <Compile Include="Maintenance_Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminSignUp.resx">
       <DependentUpon>AdminSignUp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Maintenance Sched.resx">
-      <DependentUpon>Maintenance Sched.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance_Edit.resx">
       <DependentUpon>Maintenance_Edit.cs</DependentUpon>
