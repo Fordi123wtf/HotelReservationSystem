@@ -186,6 +186,7 @@
             this.label10.Size = new System.Drawing.Size(90, 13);
             this.label10.TabIndex = 38;
             this.label10.Text = "Security Question";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
