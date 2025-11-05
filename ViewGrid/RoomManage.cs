@@ -41,8 +41,8 @@ namespace ViewGrid
             sqlDA.SelectCommand = sqlcmd;
             sqlDA.Fill(DS, "tablefetch");
 
-            dataGridView1.DataSource = DS;
-            dataGridView1.DataMember = "tablefetch";
+            dataGridRoomManagement.DataSource = DS;
+            dataGridRoomManagement.DataMember = "tablefetch";
 
             sqlcon.Close();
         }
@@ -66,6 +66,16 @@ namespace ViewGrid
             Admin_DashBoard admin_DashBoard = new Admin_DashBoard();
             admin_DashBoard.Show();
             this.Hide();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //dataGridRoomManagement.SelectedCells[1].Value//
+        }
+
+        private void dataGridRoomManagement_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
