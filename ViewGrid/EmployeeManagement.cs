@@ -34,5 +34,10 @@ namespace ViewGrid
         {
 
         }
+
+        private void EmployeeManagement_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

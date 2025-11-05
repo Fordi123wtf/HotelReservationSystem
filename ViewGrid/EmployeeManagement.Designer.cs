@@ -152,6 +152,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "EmployeeManagement";
             this.Text = "EmployeeManagement";
+            this.Load += new System.EventHandler(this.EmployeeManagement_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
