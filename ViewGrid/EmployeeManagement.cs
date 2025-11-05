@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,7 +33,31 @@ namespace ViewGrid
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            string search = txtEmployee.Text;
 
+            MySqlConnection sqlcon = new MySqlConnection("server=localhost; database=admin_login; uid=root;");
+            MySqlCommand sqlcmd = new MySqlCommand();
+            MySqlDataAdapter sqlDA = new MySqlDataAdapter();
+            DataSet DS = new DataSet();
+
+            sqlcon.Open();
+
+            if (search == null)
+                sqlcmd.CommandText = $"SELECT * FROM admin_info WHERE First_Name";
+
+            else
+                sqlcmd.CommandText = $"SELECT * FROM admin_info WHERE Last_Name LIKE '%{search}%'";
+
+            sqlcmd.CommandType = CommandType.Text;
+            sqlcmd.Connection = sqlcon;
+
+            sqlDA.SelectCommand = sqlcmd;
+            sqlDA.Fill(DS, "tablefetch");
+
+            dataGridView1.DataSource = DS;
+            dataGridView1.DataMember = "tablefetch";
+
+            sqlcon.Close();
         }
 
         private void EmployeeManagement_Load(object sender, EventArgs e)

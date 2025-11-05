@@ -43,12 +43,7 @@ namespace ViewGrid
             this.Close();
         }
 
-        private void btn_Maintenance_Scheduling_Click(object sender, EventArgs e)
-        {
-            Maintenance_Sched maintenance_Sched = new Maintenance_Sched();
-            maintenance_Sched.Show();
-            this.Hide();
-        }
+       
 
         private void btn_Room_Type_Management_Click(object sender, EventArgs e)
         {
@@ -87,6 +82,11 @@ namespace ViewGrid
         }
 
         private void Admin_DashBoard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

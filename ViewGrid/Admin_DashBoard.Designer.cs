@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_DashBoard));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Logout = new System.Windows.Forms.Button();
@@ -36,16 +37,16 @@
             this.btn_Room_Management = new System.Windows.Forms.Button();
             this.btn_Room_Type_Management = new System.Windows.Forms.Button();
             this.btn_User_Records = new System.Windows.Forms.Button();
-            this.btn_Maintenance_Scheduling = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(505, 0);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(475, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(519, 602);
+            this.pictureBox1.Size = new System.Drawing.Size(763, 602);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -54,9 +55,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(634, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Picturebox ito pakilagay nalang ng pic";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_Logout
             // 
@@ -136,25 +137,12 @@
             this.btn_User_Records.UseVisualStyleBackColor = false;
             this.btn_User_Records.Click += new System.EventHandler(this.btn_User_Records_Click);
             // 
-            // btn_Maintenance_Scheduling
-            // 
-            this.btn_Maintenance_Scheduling.BackColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Maintenance_Scheduling.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Maintenance_Scheduling.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Maintenance_Scheduling.Location = new System.Drawing.Point(94, 73);
-            this.btn_Maintenance_Scheduling.Name = "btn_Maintenance_Scheduling";
-            this.btn_Maintenance_Scheduling.Size = new System.Drawing.Size(267, 45);
-            this.btn_Maintenance_Scheduling.TabIndex = 10;
-            this.btn_Maintenance_Scheduling.Text = "Maintenance Scheduling";
-            this.btn_Maintenance_Scheduling.UseVisualStyleBackColor = false;
-            this.btn_Maintenance_Scheduling.Click += new System.EventHandler(this.btn_Maintenance_Scheduling_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(93, 22);
+            this.label2.Location = new System.Drawing.Point(93, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(268, 24);
             this.label2.TabIndex = 23;
@@ -165,7 +153,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1027, 592);
+            this.ClientSize = new System.Drawing.Size(1237, 592);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.btn_Reservation);
@@ -173,7 +161,6 @@
             this.Controls.Add(this.btn_Room_Management);
             this.Controls.Add(this.btn_Room_Type_Management);
             this.Controls.Add(this.btn_User_Records);
-            this.Controls.Add(this.btn_Maintenance_Scheduling);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Admin_DashBoard";
@@ -196,7 +183,6 @@
         private System.Windows.Forms.Button btn_Room_Management;
         private System.Windows.Forms.Button btn_Room_Type_Management;
         private System.Windows.Forms.Button btn_User_Records;
-        private System.Windows.Forms.Button btn_Maintenance_Scheduling;
         private System.Windows.Forms.Label label2;
     }
 }

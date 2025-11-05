@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ViewGrid
 {
-    public partial class Client_Records : Form
+    public partial class User_Terms : Form
     {
-        public Client_Records()
+        public User_Terms()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
