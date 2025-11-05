@@ -169,11 +169,47 @@
     <Compile Include="User_Interface1.Designer.cs">
       <DependentUpon>User_Interface1.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_MainMenu.Designer.cs">
+      <DependentUpon>User_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_PassRecovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_PassRecovery.Designer.cs">
+      <DependentUpon>User_PassRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_RoomSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_RoomSelection.Designer.cs">
+      <DependentUpon>User_RoomSelection.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User_SignUp.Designer.cs">
       <DependentUpon>User_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_SignupComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_SignupComplete.Designer.cs">
+      <DependentUpon>User_SignupComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_SpecificRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_SpecificRoom.Designer.cs">
+      <DependentUpon>User_SpecificRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Terms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Terms.Designer.cs">
+      <DependentUpon>User_Terms.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminLogIn.resx">
       <DependentUpon>AdminLogIn.cs</DependentUpon>
@@ -220,8 +256,26 @@
     <EmbeddedResource Include="User_Interface1.resx">
       <DependentUpon>User_Interface1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User_MainMenu.resx">
+      <DependentUpon>User_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_PassRecovery.resx">
+      <DependentUpon>User_PassRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_RoomSelection.resx">
+      <DependentUpon>User_RoomSelection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User_SignUp.resx">
       <DependentUpon>User_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_SignupComplete.resx">
+      <DependentUpon>User_SignupComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_SpecificRoom.resx">
+      <DependentUpon>User_SpecificRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Terms.resx">
+      <DependentUpon>User_Terms.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
