@@ -20,16 +20,21 @@ namespace ViewGrid
 
         private void btn_LogIn_1_Click(object sender, EventArgs e)
         {
-            AdminLogIn adminLogIn = new AdminLogIn();   
-            adminLogIn.Show();
+            // both admin and user log in here
+            LogIn logIn = new LogIn();
+            logIn.Show();
             this.Hide();
+
         }
 
         private void btn_SignUp_1_Click(object sender, EventArgs e)
         {
-            AdminSignUp adminSignUp = new AdminSignUp();
-            adminSignUp.Show();
+            // only user sign up here
+
+            User_Terms user_Terms = new User_Terms();
+            user_Terms.Show();
             this.Hide();
+
 
         }
 

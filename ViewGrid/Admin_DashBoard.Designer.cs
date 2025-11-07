@@ -38,6 +38,7 @@
             this.btn_Room_Type_Management = new System.Windows.Forms.Button();
             this.btn_User_Records = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_makeAdmin_TESTING = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             this.btn_Reservation.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_Reservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Reservation.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Reservation.Location = new System.Drawing.Point(94, 399);
+            this.btn_Reservation.Location = new System.Drawing.Point(94, 353);
             this.btn_Reservation.Name = "btn_Reservation";
             this.btn_Reservation.Size = new System.Drawing.Size(267, 45);
             this.btn_Reservation.TabIndex = 15;
@@ -90,7 +91,7 @@
             this.btn_Employee_Management.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_Employee_Management.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Employee_Management.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Employee_Management.Location = new System.Drawing.Point(94, 344);
+            this.btn_Employee_Management.Location = new System.Drawing.Point(94, 298);
             this.btn_Employee_Management.Name = "btn_Employee_Management";
             this.btn_Employee_Management.Size = new System.Drawing.Size(267, 45);
             this.btn_Employee_Management.TabIndex = 14;
@@ -103,7 +104,7 @@
             this.btn_Room_Management.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_Room_Management.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Room_Management.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Room_Management.Location = new System.Drawing.Point(94, 242);
+            this.btn_Room_Management.Location = new System.Drawing.Point(94, 196);
             this.btn_Room_Management.Name = "btn_Room_Management";
             this.btn_Room_Management.Size = new System.Drawing.Size(267, 45);
             this.btn_Room_Management.TabIndex = 13;
@@ -116,7 +117,7 @@
             this.btn_Room_Type_Management.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_Room_Type_Management.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Room_Type_Management.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_Room_Type_Management.Location = new System.Drawing.Point(94, 191);
+            this.btn_Room_Type_Management.Location = new System.Drawing.Point(94, 145);
             this.btn_Room_Type_Management.Name = "btn_Room_Type_Management";
             this.btn_Room_Type_Management.Size = new System.Drawing.Size(267, 45);
             this.btn_Room_Type_Management.TabIndex = 12;
@@ -129,7 +130,7 @@
             this.btn_User_Records.BackColor = System.Drawing.Color.SaddleBrown;
             this.btn_User_Records.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_User_Records.ForeColor = System.Drawing.Color.Bisque;
-            this.btn_User_Records.Location = new System.Drawing.Point(94, 293);
+            this.btn_User_Records.Location = new System.Drawing.Point(94, 247);
             this.btn_User_Records.Name = "btn_User_Records";
             this.btn_User_Records.Size = new System.Drawing.Size(267, 45);
             this.btn_User_Records.TabIndex = 11;
@@ -148,12 +149,26 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Welcome to Admin Dashboard";
             // 
+            // btn_makeAdmin_TESTING
+            // 
+            this.btn_makeAdmin_TESTING.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btn_makeAdmin_TESTING.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_makeAdmin_TESTING.ForeColor = System.Drawing.Color.Bisque;
+            this.btn_makeAdmin_TESTING.Location = new System.Drawing.Point(166, 531);
+            this.btn_makeAdmin_TESTING.Name = "btn_makeAdmin_TESTING";
+            this.btn_makeAdmin_TESTING.Size = new System.Drawing.Size(267, 45);
+            this.btn_makeAdmin_TESTING.TabIndex = 24;
+            this.btn_makeAdmin_TESTING.Text = "Make an admin? testing";
+            this.btn_makeAdmin_TESTING.UseVisualStyleBackColor = false;
+            this.btn_makeAdmin_TESTING.Click += new System.EventHandler(this.btn_makeAdmin_TESTING_Click);
+            // 
             // Admin_DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1237, 592);
+            this.Controls.Add(this.btn_makeAdmin_TESTING);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.btn_Reservation);
@@ -184,5 +199,6 @@
         private System.Windows.Forms.Button btn_Room_Type_Management;
         private System.Windows.Forms.Button btn_User_Records;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_makeAdmin_TESTING;
     }
 }

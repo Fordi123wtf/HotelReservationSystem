@@ -31,7 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_Terms));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_agree = new System.Windows.Forms.Button();
+            this.btn_disagree = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,15 +56,27 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Terms and Conditions";
             // 
-            // button1
+            // btn_agree
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(122, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "I Agree";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_agree.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agree.Location = new System.Drawing.Point(26, 340);
+            this.btn_agree.Name = "btn_agree";
+            this.btn_agree.Size = new System.Drawing.Size(83, 33);
+            this.btn_agree.TabIndex = 2;
+            this.btn_agree.Text = "I Agree";
+            this.btn_agree.UseVisualStyleBackColor = true;
+            this.btn_agree.Click += new System.EventHandler(this.btn_agree_Click);
+            // 
+            // btn_disagree
+            // 
+            this.btn_disagree.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_disagree.Location = new System.Drawing.Point(187, 340);
+            this.btn_disagree.Name = "btn_disagree";
+            this.btn_disagree.Size = new System.Drawing.Size(98, 33);
+            this.btn_disagree.TabIndex = 3;
+            this.btn_disagree.Text = "I Disagree";
+            this.btn_disagree.UseVisualStyleBackColor = true;
+            this.btn_disagree.Click += new System.EventHandler(this.btn_disagree_Click);
             // 
             // User_Terms
             // 
@@ -71,7 +84,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(328, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_disagree);
+            this.Controls.Add(this.btn_agree);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "User_Terms";
@@ -85,6 +99,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_agree;
+        private System.Windows.Forms.Button btn_disagree;
     }
 }

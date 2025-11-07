@@ -35,14 +35,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.lblRetry = new System.Windows.Forms.Label();
             this.lblCaptcha = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_securityQuestion = new System.Windows.Forms.ComboBox();
+            this.txt_secuQuestion2 = new System.Windows.Forms.TextBox();
+            this.txt_Cpassword = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.txt_contactNo = new System.Windows.Forms.TextBox();
+            this.txt_address = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,11 +49,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_LName = new System.Windows.Forms.TextBox();
+            this.txt_FName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dtp_birthdate = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblResult
@@ -74,6 +74,7 @@
             this.btnReturn.TabIndex = 52;
             this.btnReturn.Text = "Return";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnFinish
             // 
@@ -83,6 +84,7 @@
             this.btnFinish.TabIndex = 51;
             this.btnFinish.Text = "Finish";
             this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // txtAnswer
             // 
@@ -121,62 +123,61 @@
             this.lblCaptcha.TabIndex = 47;
             this.lblCaptcha.Text = "Captcha";
             // 
-            // comboBox1
+            // txt_securityQuestion
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(87, 423);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 21);
-            this.comboBox1.TabIndex = 46;
+            this.txt_securityQuestion.FormattingEnabled = true;
+            this.txt_securityQuestion.Items.AddRange(new object[] {
+            "1+1",
+            "Ano grade mo boss?",
+            "Ano ba tlaga ilalagay ko dito?",
+            "Joke lang yung nilalagay ko dito",
+            "What do you call a priest that becomes a lawyer?"});
+            this.txt_securityQuestion.Location = new System.Drawing.Point(87, 423);
+            this.txt_securityQuestion.Name = "txt_securityQuestion";
+            this.txt_securityQuestion.Size = new System.Drawing.Size(241, 21);
+            this.txt_securityQuestion.TabIndex = 46;
             // 
-            // textBox9
+            // txt_secuQuestion2
             // 
-            this.textBox9.Location = new System.Drawing.Point(87, 445);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(241, 20);
-            this.textBox9.TabIndex = 45;
+            this.txt_secuQuestion2.Location = new System.Drawing.Point(87, 445);
+            this.txt_secuQuestion2.Name = "txt_secuQuestion2";
+            this.txt_secuQuestion2.Size = new System.Drawing.Size(241, 20);
+            this.txt_secuQuestion2.TabIndex = 45;
             // 
-            // textBox8
+            // txt_Cpassword
             // 
-            this.textBox8.Location = new System.Drawing.Point(85, 381);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(243, 20);
-            this.textBox8.TabIndex = 44;
+            this.txt_Cpassword.Location = new System.Drawing.Point(85, 381);
+            this.txt_Cpassword.Name = "txt_Cpassword";
+            this.txt_Cpassword.Size = new System.Drawing.Size(243, 20);
+            this.txt_Cpassword.TabIndex = 44;
             // 
-            // textBox7
+            // txt_password
             // 
-            this.textBox7.Location = new System.Drawing.Point(85, 338);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(243, 20);
-            this.textBox7.TabIndex = 43;
+            this.txt_password.Location = new System.Drawing.Point(85, 338);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(243, 20);
+            this.txt_password.TabIndex = 43;
             // 
-            // textBox6
+            // txt_contactNo
             // 
-            this.textBox6.Location = new System.Drawing.Point(86, 296);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(242, 20);
-            this.textBox6.TabIndex = 42;
+            this.txt_contactNo.Location = new System.Drawing.Point(86, 296);
+            this.txt_contactNo.Name = "txt_contactNo";
+            this.txt_contactNo.Size = new System.Drawing.Size(242, 20);
+            this.txt_contactNo.TabIndex = 42;
             // 
-            // textBox5
+            // txt_address
             // 
-            this.textBox5.Location = new System.Drawing.Point(85, 254);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(243, 20);
-            this.textBox5.TabIndex = 41;
+            this.txt_address.Location = new System.Drawing.Point(85, 212);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(243, 20);
+            this.txt_address.TabIndex = 40;
             // 
-            // textBox4
+            // txt_email
             // 
-            this.textBox4.Location = new System.Drawing.Point(85, 212);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 20);
-            this.textBox4.TabIndex = 40;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(85, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 20);
-            this.textBox3.TabIndex = 39;
+            this.txt_email.Location = new System.Drawing.Point(85, 170);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(243, 20);
+            this.txt_email.TabIndex = 39;
             // 
             // label10
             // 
@@ -242,19 +243,19 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Email";
             // 
-            // textBox2
+            // txt_LName
             // 
-            this.textBox2.Location = new System.Drawing.Point(216, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 20);
-            this.textBox2.TabIndex = 31;
+            this.txt_LName.Location = new System.Drawing.Point(216, 128);
+            this.txt_LName.Name = "txt_LName";
+            this.txt_LName.Size = new System.Drawing.Size(112, 20);
+            this.txt_LName.TabIndex = 31;
             // 
-            // textBox1
+            // txt_FName
             // 
-            this.textBox1.Location = new System.Drawing.Point(86, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(112, 20);
-            this.textBox1.TabIndex = 30;
+            this.txt_FName.Location = new System.Drawing.Point(86, 128);
+            this.txt_FName.Name = "txt_FName";
+            this.txt_FName.Size = new System.Drawing.Size(112, 20);
+            this.txt_FName.TabIndex = 30;
             // 
             // label3
             // 
@@ -285,12 +286,20 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Sign Up";
             // 
+            // dtp_birthdate
+            // 
+            this.dtp_birthdate.Location = new System.Drawing.Point(87, 255);
+            this.dtp_birthdate.Name = "dtp_birthdate";
+            this.dtp_birthdate.Size = new System.Drawing.Size(200, 20);
+            this.dtp_birthdate.TabIndex = 54;
+            // 
             // User_SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1034, 661);
+            this.Controls.Add(this.dtp_birthdate);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnFinish);
@@ -298,14 +307,13 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lblRetry);
             this.Controls.Add(this.lblCaptcha);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_securityQuestion);
+            this.Controls.Add(this.txt_secuQuestion2);
+            this.Controls.Add(this.txt_Cpassword);
+            this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.txt_contactNo);
+            this.Controls.Add(this.txt_address);
+            this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -313,13 +321,14 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_LName);
+            this.Controls.Add(this.txt_FName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "User_SignUp";
             this.Text = "User_SignUp";
+            this.Load += new System.EventHandler(this.User_SignUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,14 +343,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lblRetry;
         private System.Windows.Forms.Label lblCaptcha;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox txt_securityQuestion;
+        private System.Windows.Forms.TextBox txt_secuQuestion2;
+        private System.Windows.Forms.TextBox txt_Cpassword;
+        private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.TextBox txt_contactNo;
+        private System.Windows.Forms.TextBox txt_address;
+        private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -349,10 +357,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_LName;
+        private System.Windows.Forms.TextBox txt_FName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtp_birthdate;
     }
 }

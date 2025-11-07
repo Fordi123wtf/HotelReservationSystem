@@ -13,9 +13,11 @@ namespace ViewGrid
 {
     public partial class Admin_DashBoard : Form
     {
+        private cls_admin currentAdmin;
         public Admin_DashBoard()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -88,6 +90,14 @@ namespace ViewGrid
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_makeAdmin_TESTING_Click(object sender, EventArgs e)
+        {
+            //AdminSignUp adminSignUp = new AdminSignUp();
+            //adminSignUp.Show();
+            //this.Hide();
 
         }
     }

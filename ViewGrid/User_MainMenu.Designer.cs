@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_logOut = new System.Windows.Forms.Button();
+            this.btn_aboutUs = new System.Windows.Forms.Button();
+            this.btn_roomTypes = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_book_a_Room = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -46,38 +46,39 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Changed your mind?";
             // 
-            // button4
+            // btn_logOut
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Sienna;
-            this.button4.Location = new System.Drawing.Point(112, 447);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 27);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Log Out";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_logOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_logOut.ForeColor = System.Drawing.Color.Sienna;
+            this.btn_logOut.Location = new System.Drawing.Point(112, 447);
+            this.btn_logOut.Name = "btn_logOut";
+            this.btn_logOut.Size = new System.Drawing.Size(74, 27);
+            this.btn_logOut.TabIndex = 12;
+            this.btn_logOut.Text = "Log Out";
+            this.btn_logOut.UseVisualStyleBackColor = true;
+            this.btn_logOut.Click += new System.EventHandler(this.btn_logOut_Click);
             // 
-            // button3
+            // btn_aboutUs
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Sienna;
-            this.button3.Location = new System.Drawing.Point(112, 329);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(215, 64);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "About Us";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_aboutUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_aboutUs.ForeColor = System.Drawing.Color.Sienna;
+            this.btn_aboutUs.Location = new System.Drawing.Point(112, 329);
+            this.btn_aboutUs.Name = "btn_aboutUs";
+            this.btn_aboutUs.Size = new System.Drawing.Size(215, 64);
+            this.btn_aboutUs.TabIndex = 11;
+            this.btn_aboutUs.Text = "About Us";
+            this.btn_aboutUs.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_roomTypes
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Sienna;
-            this.button2.Location = new System.Drawing.Point(112, 259);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 64);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Room Types";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_roomTypes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_roomTypes.ForeColor = System.Drawing.Color.Sienna;
+            this.btn_roomTypes.Location = new System.Drawing.Point(112, 259);
+            this.btn_roomTypes.Name = "btn_roomTypes";
+            this.btn_roomTypes.Size = new System.Drawing.Size(215, 64);
+            this.btn_roomTypes.TabIndex = 10;
+            this.btn_roomTypes.Text = "Room Types";
+            this.btn_roomTypes.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -88,16 +89,16 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Want to get to know us?";
             // 
-            // button1
+            // btn_book_a_Room
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Sienna;
-            this.button1.Location = new System.Drawing.Point(112, 162);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(215, 64);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Book A Room";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_book_a_Room.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_book_a_Room.ForeColor = System.Drawing.Color.Sienna;
+            this.btn_book_a_Room.Location = new System.Drawing.Point(112, 162);
+            this.btn_book_a_Room.Name = "btn_book_a_Room";
+            this.btn_book_a_Room.Size = new System.Drawing.Size(215, 64);
+            this.btn_book_a_Room.TabIndex = 8;
+            this.btn_book_a_Room.Text = "Book A Room";
+            this.btn_book_a_Room.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -115,11 +116,11 @@
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1034, 661);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_logOut);
+            this.Controls.Add(this.btn_aboutUs);
+            this.Controls.Add(this.btn_roomTypes);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_book_a_Room);
             this.Controls.Add(this.label1);
             this.Name = "User_MainMenu";
             this.Text = "User_MainMenu";
@@ -131,11 +132,11 @@
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_logOut;
+        private System.Windows.Forms.Button btn_aboutUs;
+        private System.Windows.Forms.Button btn_roomTypes;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_book_a_Room;
         private System.Windows.Forms.Label label1;
     }
 }

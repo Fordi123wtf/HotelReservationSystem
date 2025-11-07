@@ -12,52 +12,42 @@ using MySql.Data.MySqlClient;
 
 namespace ViewGrid
 {
+    
     public partial class AdminSignUp : Form
     {
-        public AdminSignUp()
+        private cls_admin currentAdmin;
+        public AdminSignUp(cls_admin currentAdmin)
         {
             InitializeComponent();
+
+           this.currentAdmin = currentAdmin;
+
         }
 
         private void btnFinish_Click(object sender, EventArgs e)
         {
-            // 10 items
-            string firstname = txtFirstName.Text;
-            string lastname = txtLastName.Text;
-            string email = txtEmail.Text;
-            string address = txtAddress.Text;
-            string birthdate = dateTimePicker1.Text;
-            string contact = txtContact.Text;
-            string password = txtPassword.Text;
-            string cpassword = txtCPassword.Text;
-            string adminID = txtAdminID.Text;
-            string admintype = cboAdminType.Text;
+            cls_admin admin = new cls_admin()
+            {
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Email = txtEmail.Text,
+                Address = txtAddress.Text,
+                Birthdate = dateTimePicker1.Text,
+                Contact = txtContact.Text,
+                Password = txtPassword.Text,
+                CPassword = txtCPassword.Text,
+                AdminID = txtAdminID.Text,
+                AdminType = cboAdminType.Text
+            };
 
-            //Pinalitan ko yung pangalan ng form mula AdminLogin to AdminSignUp sa ibaba
-            // Baka mag loko yung Database mo
-            // ADDED IN THIS sqlcon: PORT = 3307 AND pwd='' <-- only works for me btw, Lamando
+            if (txtPassword.Text != txtCPassword.Text)
+            {
+                MessageBox.Show("Password did not match! Please try again.");
+                return;
+            }
+            admin.saveAdminInfo();
 
-            //                                                                        admin_info to hotel_reservation.
-            MySqlConnection sqlcon = new MySqlConnection("server=localhost; port=3307;database=hotel_reservation;uid=root;pwd=''");
-            MySqlCommand sqlcmd = new MySqlCommand();
-
-            sqlcon.Open();
-
-            sqlcmd.CommandText = $"INSERT INTO admin_info (Last_Name, First_Name, Email, Address, Birthdate, Contact_No, Password, CPassword, Admin_ID, Admin_Type)" +
-                                 $"values ('{firstname}', '{lastname}', '{email}', '{address}', '{birthdate}', '{contact}', '{password}', '{cpassword}', '{adminID}', '{admintype}')";
-
-            sqlcmd.CommandType = CommandType.Text;
-            sqlcmd.Connection = sqlcon;
-
-            sqlcmd.ExecuteNonQuery();
-            MessageBox.Show("Saved Data successfully!");
-
-            sqlcon.Close();
-
-
-
-
-
+            MessageBox.Show("Admin Registered Successfully!");  
         }
 
 

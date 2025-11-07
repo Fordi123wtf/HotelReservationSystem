@@ -21,5 +21,10 @@ namespace ViewGrid
         {
 
         }
+
+        private void Client_Records_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

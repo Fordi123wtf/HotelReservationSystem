@@ -1,6 +1,6 @@
 ﻿namespace ViewGrid
 {
-    partial class AdminLogIn
+    partial class LogIn
     {
         /// <summary>
         /// Required designer variable.
@@ -39,10 +39,9 @@
             // 
             // btn_finish
             // 
-            this.btn_finish.Location = new System.Drawing.Point(40, 356);
-            this.btn_finish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_finish.Location = new System.Drawing.Point(30, 289);
             this.btn_finish.Name = "btn_finish";
-            this.btn_finish.Size = new System.Drawing.Size(100, 50);
+            this.btn_finish.Size = new System.Drawing.Size(75, 41);
             this.btn_finish.TabIndex = 0;
             this.btn_finish.Text = "Finish:";
             this.btn_finish.UseVisualStyleBackColor = true;
@@ -50,10 +49,9 @@
             // 
             // btn_return
             // 
-            this.btn_return.Location = new System.Drawing.Point(248, 356);
-            this.btn_return.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_return.Location = new System.Drawing.Point(186, 289);
             this.btn_return.Name = "btn_return";
-            this.btn_return.Size = new System.Drawing.Size(100, 50);
+            this.btn_return.Size = new System.Drawing.Size(75, 41);
             this.btn_return.TabIndex = 1;
             this.btn_return.Text = "Return";
             this.btn_return.UseVisualStyleBackColor = true;
@@ -61,28 +59,25 @@
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(67, 148);
-            this.txt_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_email.Location = new System.Drawing.Point(50, 120);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(236, 22);
+            this.txt_email.Size = new System.Drawing.Size(178, 20);
             this.txt_email.TabIndex = 2;
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(67, 257);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_password.Location = new System.Drawing.Point(50, 209);
             this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(236, 22);
+            this.txt_password.Size = new System.Drawing.Size(178, 20);
             this.txt_password.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(172, 62);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(129, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 25);
+            this.label1.Size = new System.Drawing.Size(54, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Log In";
             // 
@@ -90,10 +85,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 217);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(46, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password:";
             // 
@@ -101,19 +95,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 117);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(47, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 25);
+            this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Email:";
             // 
-            // AdminLogIn
+            // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(453, 469);
+            this.ClientSize = new System.Drawing.Size(340, 381);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,10 +114,10 @@
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.btn_return);
             this.Controls.Add(this.btn_finish);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "AdminLogIn";
+            this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminLogIn";
+            this.Text = "LogIn";
+            this.Load += new System.EventHandler(this.AdminLogIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
