@@ -157,6 +157,18 @@
     <Compile Include="USERS_PassRecovery.Designer.cs">
       <DependentUpon>USERS_PassRecovery.cs</DependentUpon>
     </Compile>
+    <Compile Include="USER_BOOKINGCOMPLETE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_BOOKINGCOMPLETE.Designer.cs">
+      <DependentUpon>USER_BOOKINGCOMPLETE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_LOGIN.Designer.cs">
+      <DependentUpon>USER_LOGIN.cs</DependentUpon>
+    </Compile>
     <Compile Include="USER_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +180,12 @@
     </Compile>
     <Compile Include="USER_RoomSelection.Designer.cs">
       <DependentUpon>USER_RoomSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_ROOMTYPES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_ROOMTYPES.Designer.cs">
+      <DependentUpon>USER_ROOMTYPES.cs</DependentUpon>
     </Compile>
     <Compile Include="USER_SignUp.cs">
       <SubType>Form</SubType>
@@ -226,11 +244,20 @@
     <EmbeddedResource Include="USERS_PassRecovery.resx">
       <DependentUpon>USERS_PassRecovery.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="USER_BOOKINGCOMPLETE.resx">
+      <DependentUpon>USER_BOOKINGCOMPLETE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_LOGIN.resx">
+      <DependentUpon>USER_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="USER_MainMenu.resx">
       <DependentUpon>USER_MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USER_RoomSelection.resx">
       <DependentUpon>USER_RoomSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_ROOMTYPES.resx">
+      <DependentUpon>USER_ROOMTYPES.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="USER_SignUp.resx">
       <DependentUpon>USER_SignUp.cs</DependentUpon>
